@@ -1,12 +1,11 @@
 #include <stdio.h>
 
-int main() 
-{
+int main() {
   char nome[50], genero[50];
   int altura;
 
   printf("Insira o seu nome: ");
-  scanf(" %s", &nome);
+  fgets(nome, sizeof(50), stdin);
 
   printf("Insira seu genero: ");
   scanf(" %s", &genero);

@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main() 
-{
+int main(){
   printf("Bem vindo ao programa que verifica se seu triangulo é:\nEquilátero, Isóceles ou Escaleno\n\n");
 
   int lado1, lado2, lado3;
@@ -11,29 +10,25 @@ int main()
    
   int somaLados= lado1 + lado2 + lado3;
 
-  if (somaLados == true)
-  {
+  if (somaLados >= 3){
     printf("Seu triangulo é ");
-    if (somaLados/3 == lado1)
-    {
+
+    if (somaLados/3 == lado1){
       printf("equilátero\n");
     } 
-    if (lado1 == lado2)
-    {
+    if (lado1 == lado2){
       printf("isóceles\n");
     } 
-    if (lado1 == lado3)
-    {
+    if (lado1 == lado3){
       printf("isóceles\n");
     } 
-    if (lado2 == lado3)
-    {
+    if (lado2 == lado3){
       printf("isóceles\n");
-    } 
-    else 
-    {
-      printf("escaleno\n");
-    }
-  }    
+    } else {
+        printf("escaleno\n");
+      }
+  } else {
+      printf("erro, inputs invalidos\n");
+    }  
   return 0;
 }

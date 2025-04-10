@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main() 
-{
+int main() {
   float n1, n2, n3, n4, soma1, soma2;  
   float divisao;
 

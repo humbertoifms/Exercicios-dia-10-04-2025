@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main() 
-{
+int main() {
   printf("Esse algoritimo soma dois numeros inteiro e mostra o resultado\n\n");  
   int n1, n2, soma;  
 
