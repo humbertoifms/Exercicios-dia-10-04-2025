@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.h> //Por favor, na hora de compilar usar -lm para o gcc reconhecer a biblioteca
 
 int main(){
   printf("Esse programa serve para fazer calculos usando a formula de Bhaskara\n\n");  
