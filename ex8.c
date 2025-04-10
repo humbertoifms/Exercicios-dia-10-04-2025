@@ -5,7 +5,7 @@ int main() {
   int altura;
 
   printf("Insira o seu nome: ");
-  fgets(nome, sizeof(50), stdin);
+  scanf(" %[^\n]", nome);
 
   printf("Insira seu genero: ");
   scanf(" %s", &genero);
