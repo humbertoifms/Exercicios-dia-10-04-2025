@@ -9,5 +9,5 @@ int main () {
     scanf(" %f", &n2);
     divisao = n1/n2;
     printf("O resultado sem formatação é: %f\n", divisao);
-    printf("O resultado com formatação inteira é: %d\n", divisao); 
+    printf("O resultado com formatação inteira é: %d\n", (int)divisao); 
 }
