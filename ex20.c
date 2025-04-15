@@ -15,14 +15,12 @@ int main() {
     printf("Insira o °%d caractere: ", i + 1);
     scanf(" %c", &letras[i]);
   }
-  for (int i = 0; i < tamAlfabeto; i++){
-    alfabetoNum[i] = i + 1;
-  }
   for (int i = 0; i < tamLetras; i++){
     for (int j = 0; j < tamAlfabeto; j++){
       if (letras[i] == alfabeto[j]){
         letras[i] = j + 1;
       }
+      alfabetoNum[j] = j + 1;
     }
   }
   int temp;
@@ -35,15 +33,13 @@ int main() {
       }
     }
   }
+  printf("Letras formatadas:");
   for (int i = 0; i < tamLetras; i++){
     for (int j = 0; j < tamAlfabeto; j++){
       if (letras[i] == alfabetoNum[j]){
         letras[i] = alfabeto[j];
       }
     }
-  }
-  printf("Letras formatadas:");
-  for (int i = 0; i < tamLetras; i++){
     printf(" %c", letras[i]);
   }
   printf("\n");
