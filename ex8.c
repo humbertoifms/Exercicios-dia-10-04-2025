@@ -1,19 +1,22 @@
 #include <stdio.h>
 
-int main() {
-  char nome[50], genero[50];
-  int altura;
+int main () {
+  int idAluno;
+  printf("Insira seu id: ");
+  scanf("%d", &idAluno);
+    
+  if(idAluno >= 100000){
+      printf("Id do aluno invalido\n");
+      return 1;
+  }
 
-  printf("Insira o seu nome: ");
-  scanf(" %[^\n]", nome);
+  int n1, n2, n3;
+  printf("Insira suas 3 notas: ");
+  scanf("%d %d %d", &n1, &n2, &n3);
 
-  printf("Insira seu genero: ");
-  scanf(" %s", &genero);
+  int media = n1 + n2 + n3;
+  media = media/3;
+  printf("Sua média é: %d\n", media);
 
-  printf("Insira sua altura em cm: ");
-  scanf(" %d", altura);
-
-  printf("Esse é seu nome: %s\nSeu gênero: %s\nSua altura em centimetros: %d", nome, genero, altura);
-  
-  return 0;
+    return 0;
 }

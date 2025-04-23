@@ -1,36 +1,14 @@
 #include <stdio.h>
 
-int main() {
-  int altura;
-  char genero;  
+int main(){
+  int a, b, c;
+  printf("Insira o valor a: ");
+  scanf(" %d", a);
+  printf("Insira o valor b: ");
+  scanf(" %d", b);
+  printf("Insira o valor c: ");
+  scanf(" %d", c);
 
-  printf("Insira sua altura em centimetros: \n");
-  scanf(" %d", &altura);
-
-  printf("Insira seu genero com o caractér m ou f: \n");
-  scanf(" %c", &genero);  
-
-  if (genero == 'm') {
-    if (altura > 175){
-      printf("Você esta acima da média nacional\n");
-    }
-    if (altura == 175){
-      printf("Você esta exatamente na média nacional\n");
-    }else {
-      printf("Você esta abaixo da média nacional\n");
-    }
-  }
-
-  if (genero == 'f'){
-    if (altura > 162){
-      printf("Você esta acima da média nacional\n");
-    }
-    if (altura == 162){
-      printf("Você esta exatamente na média nacional\n");
-    }else {
-      printf("Você esta abaixo da média nacional\n");
-    }
-  }
-
+  printf("A= %d\nB= %d\nC= %d\n", a,b,c);
   return 0;
-}
+}  

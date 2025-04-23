@@ -1,17 +1,11 @@
 #include <stdio.h>
 
-int main() {
-  printf("Esse algoritimo soma dois numeros inteiro e mostra o resultado\n\n");  
-  int n1, n2, soma;  
-
-  printf("Insira o primeiro número: ");
-  scanf("%d", &n1);
-
-  printf("Insira o segundo número: ");
-  scanf("%d", &n2);  
+int main () {
+  float n1, n2, n3;
   
-  soma = n1 + n2;  
-  printf("Esse é seu resultado: %d\n", soma);
-
+  printf("Insira seus 3 valores: ");
+  scanf("%d %d %d", &n1, &n2, &n3);
+  
+  printf("Seus valores reais dispóstos reversamente são: %d %d %d\n", n3, n2, n1);
   return 0;
-}
+} 

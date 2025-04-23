@@ -1,44 +1,27 @@
 #include <stdio.h>
 
 int main() {
-  int n1, temp;
-  printf("Quantos caracteres você quer inserir?: ");
-  scanf(" %d", &n1);
-  char letras[n1];
-  char alfabeto[]= {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
-  char alfabetoNum[26];
-  int tamLetras = sizeof(letras) / sizeof(letras[0]);
-  int tamAlfabeto = sizeof(alfabeto) / sizeof(alfabeto[0]);
+  int horaInicio;
+  printf("Insira a hora de inicio do jogo: ");
+  scanf("%d", &horaInicio);
 
-  printf("Insira %d caracteres:\n", tamLetras);
-  for (int i = 0; i < tamLetras; i++){
-    printf("Insira o °%d caractere: ", i + 1);
-    scanf(" %c", &letras[i]);
-    for (int j = 0; j < tamAlfabeto; j++){
-      if (letras[i] == alfabeto[j]){
-        letras[i] = j + 1;
-      }
-      alfabetoNum[j] = j + 1;
-    }
-  }
-  for (int i = 0; i < tamLetras; i++){
-    for (int j = 0; j < tamLetras - 1; j++){
-      if (letras[j] > letras[j + 1]){
-        temp = letras[j];
-        letras[j] = letras[j + 1];
-        letras[j + 1] = temp;
-      }
-    }
-  }
-  printf("Letras formatadas:");
-  for (int i = 0; i < tamLetras; i++){
-    for (int j = 0; j < tamAlfabeto; j++){
-      if (letras[i] == alfabetoNum[j]){
-        letras[i] = alfabeto[j];
-      }
-    }
-    printf(" %c", letras[i]);
-  }
-  printf("\n");
+  int horaFinal;
+  printf("Agora insira a hora final do jogo: ");
+  scanf("%d", &horaFinal);
+
+  printf("A hora de inicio e de término do jogo é: %dh e %dh\n", horaInicio, horaFinal);
+  int n1, n2;
+  char c1, c2, c3;
+  float n3;
+  printf("Insira 2 números inteiros: ");
+  scanf("%d %d", &n1, &n2);
+  
+  printf("Insira 3 caracteres: ");
+  scanf("%c %c %c", &c1, &c2, &c3);
+  
+  printf("Insira um número real: ");
+  scanf("%f", &n3);
+  
+  printf("Esses são seus valores: %f %c %c %c %d %d\n", n3, c1, c2, c3, n1, n2);
   return 0;
 }

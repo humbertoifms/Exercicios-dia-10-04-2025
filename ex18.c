@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-int main () {
-  char c1;
-  printf("Digite a vogal -> o: ");
-  scanf(" %c", &c1);
-  if (c1 != 'o'){
-    printf("Erro: input ivalido\n");
-    return 1;
-  }else {
-    printf("e\n");
-  }
-  return 0;
+int main() {
+    int alturaEstudante;
+    char genero;
+    printf("Insira sua altura: ");
+    scanf("%d", alturaEstudante);
+
+    printf("Insira seu gênero com uma letra F ou M: ");
+    scanf("%c", genero);
+
+    printf("Sua altura é: %d. Seu gênero é: %d.", alturaEstudante, genero);
+    return 0;
 }
